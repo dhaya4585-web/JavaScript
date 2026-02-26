@@ -1,0 +1,47 @@
+body{
+    background: lightgrey;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+.hole{
+    border: 2px solid black;
+    width: 20%;
+    height: 400px;
+    margin: 10%;
+    padding: 50px;
+    position: absolute;
+    left: 400px;
+    border-radius: 20px;
+    background-color: aqua;
+}
+.layer{
+       padding: 10%;
+       margin: 20px;
+}
+.layer form input{
+    width: 40%;
+    position: absolute;
+    right: 50px;
+    align-items: center;
+    border-radius: 5px;
+}
+button{
+    position: absolute;
+    bottom: 150px;
+    
+}
+
+.layer form h3{
+    position:relative;
+    right: 100px;
+    bottom: 80px;
+    top: 40px;
+
+}
+button :hover{
+    transform: scale(1.50);
+}
