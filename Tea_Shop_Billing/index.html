@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEA SHOP</title>
+    <link rel="stylesheet" href="tea.css">
+</head>
+<body>
+    <img src="imgback.jpg" id="imgs">
+    <h1 id="header">RAJNIMURGAN TEA SHOP</h1>
+    <div id="select">
+        <select  id="item" onchange="show()">
+            <option value="OPTION">SELECT OPTION</option>
+            <option value="TEA">TEA</option>
+            <option value="SNACK">SNACK</option>
+        </select>
+    </div>
+
+    <div id="table">
+             <!-- TEA TABLE -->
+               <table id="tea" border="1" style="display:none;">
+                    <tr>
+                        <th>ID</th>
+                        <th>ITEM</th>
+                        <th>COST</th>
+                        <th>QTY</th>
+                        <th>TOTAL</th>
+                    </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>COFFEE</td>
+                            <td class="amt">20</td>
+                            <td><input type="number" class="qty" oninput="calc(this)"></td>
+                            <td><input type="number" class="tot" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>LEMON-TEA</td>
+                            <td class="amt">15</td>
+                            <td><input type="number" class="qty" oninput="calc(this)"></td>
+                            <td><input type="number" class="tot" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>BLACK-TEA</td>
+                            <td class="amt">25</td>
+                            <td><input type="number" class="qty" oninput="calc(this)"></td>
+                            <td><input type="number" class="tot" readonly></td>
+                        </tr>
+                        <TR>
+                            <td>104</td>
+                            <td>GREEN-TEA</td>
+                            <td class="amt">30</td>
+                            <td><input type="number" class="qty" oninput="calc(this)"></td>
+                            <td><input type="number" class="tot" readonly></td>
+                        </TR>
+                
+                </table>
+
+                <!-- SNACK TABLE -->
+                <table id="snack" border="1" style="display:none;">
+                    <tr>
+                    <th>ID</th>
+                    <th>ITEM</th>
+                    <th>COST</th>
+                    <th>QTY</th>
+                    <th>TOTAL</th>
+                    
+                    </tr>
+
+                    <tr>
+                    <td>201</td>
+                    <td>SAMOSA</td>
+                    <td class="amt">15</td>
+                    <td><input type="number" class="qty" oninput="calc(this)"></td>
+                    <td><input type="number" class="tot" readonly></td>
+                    </tr>
+
+                    <tr>
+                    <td>202</td>
+                    <td>BAJJI</td>
+                    <td class="amt">10</td>
+                    <td><input type="number" class="qty" oninput="calc(this)"></td>
+                    <td><input type="number" class="tot" readonly></td>
+                    </tr>
+
+                    <tr>
+                    <td>203</td>
+                    <td>VADA</td>
+                    <td class="amt">12</td>
+                    <td><input type="number" class="qty" oninput="calc(this)"></td>
+                    <td><input type="number" class="tot" readonly></td>
+                    </tr>
+                </table>
+        </div>
+        <div id="btn">
+          
+            <button onclick="del()" id="del">DELETE</button>
+            <button onclick="bill()" id="bill">BILL</button>
+        </div>
+        <script src="tea.js"></script>
+</body>
+</html>

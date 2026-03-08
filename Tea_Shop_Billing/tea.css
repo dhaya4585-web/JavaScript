@@ -1,0 +1,48 @@
+body{
+    background-color: cadetblue;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#imgs{
+   position: absolute;
+   bottom: 20%;
+   left: 200px;
+   width: 80%;
+   height: 60%;
+   
+}
+#header{
+    border: 5px solid rgb(0, 207, 165);
+    color: rgb(34, 22, 6);
+    background-color: antiquewhite;
+    position: absolute;
+    top: 10%;
+    right: 35%;
+}
+table{
+      position: absolute;
+      right: 40%;
+      top: 40%;
+      width: 50px;
+      height: 20px;
+}
+#select{
+       position: absolute;
+       top: 30%;
+       left: 40%;
+}
+#del{
+    position: absolute;
+    top: 70%;
+    width: 5%;
+    right: 60%;
+}
+#bill{
+    position: absolute;
+    top: 70%;
+    width: 5%;
+    right: 50%;
+}
